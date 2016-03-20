@@ -1,7 +1,7 @@
 mamercad.rundeck
 ================
 
-Stands up Rundeck 2 on RHEL/CentOS
+Stands up Rundeck on RHEL/CentOS
 
 Requirements
 ------------
