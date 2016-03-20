@@ -1,0 +1,14 @@
+---
+# tasks file for ansible-rundeck
+
+- name: install java-1.7.0-openjdk
+  yum: name=java-1.7.0-openjdk state=present
+
+- name: install rundeck repo
+  yum: name=http://repo.rundeck.org/latest.rpm state=present
+
+- name: install rundeck
+  yum: name=rundeck state=present
+
+- name: start and enable rundeck
+  service: name=rundeckd state=started enabled=yes
